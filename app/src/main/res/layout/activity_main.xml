@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<club.cred.neopop.PopFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_secondary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <club.cred.neopop.PopFrameLayout
+
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            app:neopop_button_position="bottom|right"
+            app:neopop_center_surface_color="#FFC107"
+            app:neopop_depth="3dp"
+
+            app:neopop_gravity="on_ground"
+
+            app:neopop_parent_view_color="@color/white"
+            tools:ignore="MissingConstraints"
+
+            app:neopop_shimmer_duration="5000"
+            app:neopop_top_shimmer_color="#f00"
+            app:neopop_bottom_shimmer_color="#0f0"
+            app:neopop_show_shimmer="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_view_text" />
+        </club.cred.neopop.PopFrameLayout>
+    </LinearLayout>
+
+
+</club.cred.neopop.PopFrameLayout>

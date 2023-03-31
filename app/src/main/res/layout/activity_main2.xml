@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_regular"
+            android:padding="15dp"
+            android:text="Add Your \nMobile Number"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:alpha=".8"
+            android:text="apply with the phone number linked  \nto your bank account"
+            android:textColor="#9A9595" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
+            android:ems="10"
+            android:fontFamily="@font/gilroy_semibold"
+            android:hint="mobile number"
+            android:inputType="phone"
+            android:textColorHint="#DCB5B1B1"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:textColor="#847B7B" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/gilroy_semibold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n you agree tthat all your details entered are correct and we will be verifying your account. \n \n all your information collected are safe and encypted"
+                android:textColor="#6C6767" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <club.cred.neopop.TiltFrameLayout
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                app:neopop_bottom_surface_color="#FFC107"
+                app:neopop_button_position="center"
+                app:neopop_center_surface_color="@color/yellow"
+                app:neopop_grandparent_view_color="@color/purple_500"
+                app:neopop_gravity="on_space"
+                app:neopop_shadow_color="@color/teal"
+                app:neopop_shimmer_color="@color/grey"
+                app:neopop_show_shimmer="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_view_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:text="Enter the club"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_baseline_arrow_right_alt_24" />
+
+                </LinearLayout>
+
+            </club.cred.neopop.TiltFrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
